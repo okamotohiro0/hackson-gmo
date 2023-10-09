@@ -1,0 +1,22 @@
+{
+  "name": "Backend Dev Container",
+  "dockerComposeFile": "../backend/docker-compose.yml",
+  "service": "fastapi",
+  "workspaceFolder": "/app",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/sh"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-azuretools.vscode-docker",
+    "esbenp.prettier-vscode", // prettier
+    "EditorConfig.EditorConfig", // editorconfig
+    "DavidAnson.vscode-markdownlint", // markdownlint
+    "ms-python.python", // python
+    "eamodio.gitlens", // gitlens
+    "donjayamanne.githistory", // githistory
+    "mhutchie.git-graph" // gitgraph
+  ],
+  "forwardPorts": [8000, 5432],
+  "postCreateCommand": "echo 'Dev container is ready!'"
+}

@@ -1,0 +1,56 @@
+{
+  // ペースト時、コードを自動的に整形をする
+  "editor.formatOnPaste": true,
+  // デフォルトのフォーマッターを設定する
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // ファイル保存時、コードを整形する
+  "editor.formatOnSave": true,
+  // ファイル保存時、同時に行われるアクション
+  "editor.codeActionsOnSave": {
+    // 拡張機能Prettierのチェックを走らせる
+    "source.fixAll.prettier": true
+  },
+  // ファイル保存時、最終行に改行を挿入する
+  "files.insertFinalNewline": true,
+  // ファイル保存時、最終行以降の空行を削除する
+  "files.trimFinalNewlines": true,
+  // ファイル保存時、末尾の空白をトリミングする
+  "files.trimTrailingWhitespace": true,
+
+  // StylelintやPrettierとの競合回避
+  "scss.validate": false,
+  "css.validate": false,
+
+  // DOCTYPE宣言の書き換え
+  "emmet.variables": {
+    "lang": "ja" // => <html lang="ja">
+  },
+
+  "isort.args": ["--profile=black"],
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.tabSize": 4
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all",
+    "editor.acceptSuggestionOnEnter": "off"
+  },
+  "[json]": {
+    // 拡張機能のPrettierを適用する
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
